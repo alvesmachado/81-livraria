@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* Header */
+
+#iheader {
+    background-color: var(--primeira_cor);
+    height: 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+#header-content {
+    height: 50px;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.cmenu-btn {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+
+.icon-menu {
+    line-height: 50px;
+    padding: 13px 16px;
+    color: var(--segunda_cor);
+    transition: filter 0.2s ease, color 0.2s ease;
+    
+}
+
+.icon-menu:hover{
+    color: var(--segunda_cor_extra_escuro);
+    cursor: pointer;
+    
+}
+
+.icon-menu:active{
+    filter: brightness(75%);
+    
+}
+
+.ilogo {
+    padding: 10px 0px;
+}
+
+.ilogo a{
+    color: var(--segunda_cor);
+    text-decoration: none;
+    
+}
+
+.ilogo a:hover{
+    color: var(--segunda_cor_extra_escuro);
+    
+}
+
+.ilogo a:active{
+    filter: brightness(90%);
+    
+}
+
+.ilogo span {
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.ilogo i {
+    height: 20px;
+}

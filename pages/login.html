@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livraria Rocket | Atualizações mais rápidas | Site de leitura</title>
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="stylesheets/mobile_first.css" media="all">
-    <link rel="stylesheet" href="stylesheets/mediaq.css" media="all">
+    <title>Login do usuário</title>
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../stylesheets/base/all.css">
+    <link rel="stylesheet" href="../stylesheets/componentes/header.css" media="all">
+    <link rel="stylesheet" href="../stylesheets/componentes/nav.css" media="all">
+    <link rel="stylesheet" href="../stylesheets/componentes/footer.css" media="all">
+
+    <!-- As CSS exclusivas dessa página ficam abaixo -->
+
+    <link rel="stylesheet" href="../stylesheets/paginas/login_and_register.css">
+
+    <!-- As CSS exclusivas dessa página ficam acima -->
+
+    <link rel="stylesheet" href="../stylesheets/base/mediaq.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
@@ -55,575 +66,41 @@
         </div>
     </nav>
     <main id="imain">
-        <section id="section_main_1" class="center">
-            <div id="logo_img">
-                <a href="#"><img src="imagens/logo_1200w.png" alt="Rocket Livraria"></a>
-            </div>
-            <form action="pesquisar.php" class="search-form">
-                <input type="text" placeholder="Digite aqui para pesquisar" required>
-                <button type="submit" value="search" class="search-button">
-                    <i class="material-icons">search</i>
-                </button>
+       <section id="section_lr_1">
+            <form action="login.php" id="content_login">
+                <div class="login-label">
+                    <h1>Fazer login</h1>
+                    <p>com sua conta da Livraria Rocket. Caso não tenha conta, <a href="#">registre-se aqui!</a></p>
+                </div>
+                <div id="login-form">
+                    <div class="input-container">
+                        <input type="email" name="email" id="iemail" placeholder="Email" required="">
+                        <label for="iemail" class="input-label">Email</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" name="password" id="ipassword" placeholder="Senha" required="">
+                        <label for="ipassword" class="input-label">Senha</label>
+                    </div>
+                    <div class="btn-entrar">
+                        <input type="submit" value="Entrar" class="btn">
+                    </div>
+                </div>
             </form>
-            <div id="section_main_1_btn">
-                <div class="section_main_1_row">
-                    <a href="#" class="btn" id="iestante">Estante</a>
-                    <a href="#" class="btn" id="ihistorico">Histórico</a>
-                </div>
-                <div class="section_main_1_row">
-                    <a href="#" class="btn"  id="iliv_masc">Livros masculinos</a>
-                    <a href="#" class="btn"  id="iliv_femi">Livros femininos</a>
-                </div>
+            <hr>
+            <span>Ou</span>
+            <div id="gmail_login">
+                <a class="btn btng" href="">
+                    <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd">
+                            <path d="M20.6 11.227c0-.709-.064-1.39-.182-2.045H11v3.868h5.382a4.6 4.6 0 0 1-1.996 3.018v2.51h3.232c1.891-1.742 2.982-4.305 2.982-7.35z" fill="#4285F4"></path>
+                            <path d="M11 21c2.7 0 4.964-.895 6.618-2.423l-3.232-2.509c-.895.6-2.04.955-3.386.955-2.605 0-4.81-1.76-5.595-4.123H2.064v2.59A9.996 9.996 0 0 0 11 21z" fill="#34A853"></path>
+                            <path d="M5.405 12.9c-.2-.6-.314-1.24-.314-1.9 0-.66.114-1.3.314-1.9V6.51H2.064A9.996 9.996 0 0 0 1 11c0 1.614.386 3.14 1.064 4.49l3.34-2.59z" fill="#FBBC05"></path>
+                            <path d="M11 4.977c1.468 0 2.786.505 3.823 1.496l2.868-2.868C15.959 1.99 13.695 1 11 1 7.09 1 3.71 3.24 2.064 6.51l3.34 2.59C6.192 6.736 8.396 4.977 11 4.977z" fill="#EA4335"></path>
+                        </g>
+                    </svg><span>Continuar com o Google</span>
+                </a>
             </div>
-        </section>
-        <section id="section_main_2">
-            <div class="section-main-2-col">
-                <div class="list-title border-bottom">
-                    <h3>Recomendações de livros serializados</h3>
-                </div>
-                <ul class="list-content">
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">1</span>
-                                <span class="list-book">Lord of Mysteries</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li class="border-bottom">
-                
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">2</span>
-                                <span class="list-book">Harry Potter</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">3</span>
-                                <span class="list-book">Perfect World</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">4</span>
-                                <span class="list-book">Sacred Ruins</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">5</span>
-                                <span class="list-book">Contra os Deuses</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">6</span>
-                                <span class="list-book">The Witcher</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">7</span>
-                                <span class="list-book">O Senhor dos Anéis</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">8</span>
-                                <span class="list-book">As Crônicas de Nárnia</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">9</span>
-                                <span class="list-book">A Roda do Tempo</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">10</span>
-                                <span class="list-book">As Crônicas de Gelo e Fogo</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Em andamento</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">11</span>
-                                <span class="list-book">Coiling Dragon</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">12</span>
-                                <span class="list-book">I Shall Seal the Heavens</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">13</span>
-                                <span class="list-book">Desolate Era</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">14</span>
-                                <span class="list-book">The Beginning After the End</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Em andamento</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">15</span>
-                                <span class="list-book">Mistborn (Nascidos da Bruma)</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="section-main-2-col">
-                <div class="list-title border-bottom">
-                    <h3>Mais visitados</h3>
-                </div>
-                <ul class="list-content">
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">1</span>
-                                <span class="list-book">Lord of Mysteries</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li class="border-bottom">
-                
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">2</span>
-                                <span class="list-book">Harry Potter</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">3</span>
-                                <span class="list-book">Perfect World</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">4</span>
-                                <span class="list-book">Sacred Ruins</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">5</span>
-                                <span class="list-book">Contra os Deuses</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">6</span>
-                                <span class="list-book">The Witcher</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">7</span>
-                                <span class="list-book">O Senhor dos Anéis</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">8</span>
-                                <span class="list-book">As Crônicas de Nárnia</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">9</span>
-                                <span class="list-book">A Roda do Tempo</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">10</span>
-                                <span class="list-book">As Crônicas de Gelo e Fogo</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Em andamento</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">11</span>
-                                <span class="list-book">Coiling Dragon</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">12</span>
-                                <span class="list-book">I Shall Seal the Heavens</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">13</span>
-                                <span class="list-book">Desolate Era</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">14</span>
-                                <span class="list-book">The Beginning After the End</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Em andamento</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">15</span>
-                                <span class="list-book">Mistborn (Nascidos da Bruma)</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="section-main-2-col">
-                <div class="list-title border-bottom">
-                    <h3>Recomendações de livros completos</h3>
-                </div>
-                <ul class="list-content">
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">1</span>
-                                <span class="list-book">Lord of Mysteries</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li class="border-bottom">
-                
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">2</span>
-                                <span class="list-book">Harry Potter</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">3</span>
-                                <span class="list-book">Perfect World</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">4</span>
-                                <span class="list-book">Sacred Ruins</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">5</span>
-                                <span class="list-book">Contra os Deuses</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">6</span>
-                                <span class="list-book">The Witcher</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">7</span>
-                                <span class="list-book">O Senhor dos Anéis</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">8</span>
-                                <span class="list-book">As Crônicas de Nárnia</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">9</span>
-                                <span class="list-book">A Roda do Tempo</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">10</span>
-                                <span class="list-book">As Crônicas de Gelo e Fogo</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Em andamento</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">11</span>
-                                <span class="list-book">Coiling Dragon</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">12</span>
-                                <span class="list-book">I Shall Seal the Heavens</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">13</span>
-                                <span class="list-book">Desolate Era</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">14</span>
-                                <span class="list-book">The Beginning After the End</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Em andamento</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-bottom">
-                        <a href="#">
-                            <div class="list-content-left">
-                                <span class="list-class">15</span>
-                                <span class="list-book">Mistborn (Nascidos da Bruma)</span>
-                            </div>
-                            <div class="list-content-right">
-                                <span class="list-status">Completo</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+       </section> 
     </main>
     <footer id="ifooter">
         <div id="footer_content">

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* Index */
+
+#logo_img{
+    margin: 40px auto;
+    max-width: 300px;
+
+}
+
+#logo_img img{
+    width: 300px;
+}
+
+
+/* Buttons (section 1 | home ) */
+
+#section_main_1_btn {
+    margin: 32px auto;
+    width: 327px;
+}
+
+.section_main_1_row {
+    margin-bottom: 32px;
+}
+
+#iestante {
+    padding: 12px 52px;
+}
+
+#ihistorico {
+    padding: 12px 42px;
+}
+
+/* List (section 2 | home ) */
+
+#section_main_2 {
+    padding: 0px 10px;
+}
+
+.section-main-2-col {
+    margin-bottom: 16px;
+}
+
