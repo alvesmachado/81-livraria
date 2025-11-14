@@ -51,10 +51,6 @@
     color: var(--terceira_cor_extra_escura);
 }
 
-.border-bottom {
-    border-bottom: 0.5px solid rgb(0 0 0 / 10%);;
-}
-
 .list-content li:nth-child(1) .list-class {
     color: var(--segunda_cor);
     background-color: var(--primeira_cor_classificacao);

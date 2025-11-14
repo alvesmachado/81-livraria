@@ -40,5 +40,6 @@
 
 #ifooter_row_2 span{
     color: var(--terceira_cor_claro);
+    margin: 8px;
     
 }

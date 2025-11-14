@@ -42,3 +42,106 @@
 .search-button:active i {
     filter: brightness(75%);
 }
+
+
+/* Login/Register form */
+
+#content_login {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 401px;
+    margin: auto;
+}
+
+.login-label {
+    margin-bottom: 32px;
+}
+
+.login-label h1{
+    margin-bottom: 8px;
+}
+
+.login-label a:hover {
+    filter: brightness(125%);
+}
+
+.login-label a:active {
+    filter: brightness(75%);
+}
+
+#login_form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-container {
+    position: relative;
+    margin: 16px auto;
+    width: 401px;
+}
+
+.input-label{
+    display: none;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid var(--terceira_cor_extra_escura);
+    background-color: var(--segunda_cor_var);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-container input:focus {
+    width: 100%;
+    padding: 16px;
+    outline: 2px solid var(--primeira_cor);
+    border-radius: 4px;
+    box-sizing: border-box; 
+    border: none;
+}
+
+.input-container > input:focus + .input-label {
+    display: inline;
+    position: absolute;
+    top: -10px; 
+    left: 10px;
+    background-color: var(--segunda_cor_var);
+    padding: 0 5px; 
+    color: var(--primeira_cor);
+    font-size: 14px;
+}
+
+.input-container > input:focus::placeholder {
+  color: transparent;
+}
+
+.input-container input:not(:placeholder-shown):not(:focus) + .input-label {
+    display: inline;
+    position: absolute;
+    top: -10px; 
+    left: 10px;
+    background-color: var(--segunda_cor_var); 
+    padding: 0 5px;
+    color: var(--terceira_cor_extra_escura);
+    font-size: 14px;
+}
+
+.btn-entrar {
+    display: flex;
+}
+
+.btn-entrar > .btn {
+    padding: 15px 179px;
+    margin: auto;
+}
+
+#btn_register {
+    padding: 15px 168px;
+}
+
+#btn_lost {
+    padding: 15px 177px;
+}

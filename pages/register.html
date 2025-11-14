@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login do usuário</title>
+    <title>Registro do novo usuário</title>
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../stylesheets/base/all.css">
@@ -67,27 +67,35 @@
     </nav>
     <main id="imain">
        <section id="section_lr_1">
-            <form action="login.php" id="content_login">
+            <form action="register.php" id="content_login">
                 <div class="login-label">
-                    <h1>Fazer login</h1>
-                    <p>com sua conta da Livraria Rocket. Caso não tenha conta, <a href="register.html">registre-se aqui!</a></p>
+                    <h1>Fazer registro</h1>
+                    <p>para uma nova conta da Livraria Rocket. Caso já tenha conta, <a href="login.html">entre aqui!</a></p>
                 </div>
                 <div id="login-form">
                     <div class="input-container">
-                        <input type="email" name="email" id="iemail" placeholder="Email" required="">
+                        <input type="text" name="username" id="iusername" placeholder="Nome do usuário" required>
+                        <label for="iusername" class="input-label">Nome do usuário</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" id="iemail" placeholder="Email" required>
                         <label for="iemail" class="input-label">Email</label>
                     </div>
                     <div class="input-container">
-                        <input type="password" name="password" id="ipassword" placeholder="Senha" required="">
+                        <input type="password" name="password" id="ipassword" placeholder="Senha" required>
                         <label for="ipassword" class="input-label">Senha</label>
                     </div>
+                    <div class="input-container">
+                        <input type="password" name="cpassword" id="icpassword" placeholder="Confirme sua senha" required>
+                        <label for="icpassword" class="input-label">Confirme sua senha</label>
+                    </div>
                     <div class="btn-entrar">
-                        <input type="submit" value="Entrar" class="btn">
+                        <input type="submit" value="Registrar" class="btn" id="btn_register">
                     </div>
                 </div>
             </form>
             <hr>
-            <span id="login_span">Ou</span>
+            <span id="register_span">Ou</span>
             <div id="gmail_login">
                 <a class="btn btng" href="">
                     <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg">
