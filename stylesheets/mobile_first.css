@@ -4,7 +4,7 @@
 
 :root {
     --primeira_cor: #5D86F7;
-    --segunda_cor: #FFFFFF;
+    --segunda_cor: #f9f9f9;
     --segunda_cor_var: #FDFEFE;
     --terceira_cor_extra_escura: #a1a1a1;
     --segunda_cor_extra_escuro: #EEEEEE;
@@ -36,6 +36,10 @@ body, html {
 
 /* Gerais */
 
+a {
+    transition: color 0.2s ease, filter 0.2s ease;
+}
+
 .float-left {
     float: left;
 }
@@ -48,6 +52,28 @@ body, html {
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
+
+.btn {
+    background-color: var(--primeira_cor);
+    color: var(--segunda_cor);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 4px;
+    transition: filter 0.2s ease;
+}
+
+.btn:hover {
+    filter: brightness(110%);
+}
+
+.btn:active {
+    filter: brightness(90%);
+}
+
+
 
 /* Header */
 
@@ -62,6 +88,7 @@ body, html {
 }
 
 #header-content {
+    height: 50px;
     width: 100%;
     max-width: 1250px;
     margin: 0 auto;
@@ -79,6 +106,19 @@ body, html {
     line-height: 50px;
     padding: 13px 16px;
     color: var(--segunda_cor);
+    transition: filter 0.2s ease, color 0.2s ease;
+    
+}
+
+.icon-menu:hover{
+    color: var(--segunda_cor_extra_escuro);
+    cursor: pointer;
+    
+}
+
+.icon-menu:active{
+    filter: brightness(75%);
+    
 }
 
 .ilogo {
@@ -92,7 +132,12 @@ body, html {
 }
 
 .ilogo a:hover{
-    color: var(--terceira_cor_extra_escura);
+    color: var(--segunda_cor_extra_escuro);
+    
+}
+
+.ilogo a:active{
+    filter: brightness(90%);
     
 }
 
@@ -105,9 +150,132 @@ body, html {
     height: 20px;
 }
 
+/* nav */
+nav {
+    position: relative;
+}
+
+#nav_dark {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.527);    
+    z-index: 10;
+    display: none;
+}
+
+#nav_content {
+    position: fixed;
+    height: 100%;
+    width: 280px;
+    background-color: var(--segunda_cor_extra_escuro);    
+    z-index: 10;
+    left: -280px;
+    transition: left 0.5s ease;
+}
+
+#nav_content .icon-menu {
+    color: var(--primeira_cor);
+    
+}
+
+#nav_content .icon-menu:hover{
+    filter: brightness(125%);
+}
+
+#nav_content .icon-menu:active{
+    filter: brightness(75%);
+}
+
+#nav_content .ilogo a{
+    color: var(--primeira_cor);
+    
+}
+
+#nav_content .ilogo a:hover{
+    filter: brightness(125%);
+    
+}
+
+#nav_content .ilogo a:active{
+    filter: brightness(75%);
+    
+}
+
+#nav_content hr{
+    margin: 0px 16px;
+}
+
+#nav-options {
+    
+    list-style-type: none;
+}
+
+#nav-options a{
+    color: var(--terceira_cor);
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+}
+
+.menu-op {
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-left: 16px;
+}
+
+#nav-options a:hover{
+    color: var(--primeira_cor);
+    
+}
+
+#nav-options a:active{
+    filter: brightness(90%);
+}
+
+#nav-options i {
+    margin-right: 8px;
+    height: 20px;
+}
+
+.login-option {
+    margin-top: 16px;
+    display: flex; /* ou none */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.login-option > a{
+    text-align: center;
+    padding: 8px;
+    font-size: 18px;
+}
+
+#login-info {
+    padding: 16px 0px;
+    display: none; /* ou flex */
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-info > img{
+    width: 96px;
+    border-radius: 48px;
+    border: 4px solid var(--primeira_cor);
+
+}
+
+#login-info > a{
+    padding: 8px 0px;
+    font-size: 24px;
+
+}
+
 /* main */
 
 #imain {
+    margin: 0px auto;
     padding-top: 50px;
     max-width: 1250px;
     position: relative;
@@ -115,12 +283,12 @@ body, html {
 
 #logo_img{
     margin: 40px auto;
-    max-width: 200px;
+    max-width: 300px;
 
 }
 
 #logo_img img{
-    width: 200px;
+    width: 300px;
 }
 
 /* Search Form */
@@ -155,15 +323,14 @@ body, html {
     transform: translateY(25%);
     font-weight: bold;
     color: var(--terceira_cor);
+    transition: color 0.2s ease, filter 0.2s ease;
 }
 
 .search-button:hover i {
-    transition: 0.3s;
     color: var(--primeira_cor);
 }
 
 .search-button:active i {
-    transition: 0.3s;
     filter: brightness(75%);
 }
 
@@ -172,17 +339,6 @@ body, html {
 #section_main_1_btn {
     margin: 32px auto;
     width: 327px;
-}
-
-.btn {
-    background-color: var(--primeira_cor);
-    color: var(--segunda_cor);
-    text-decoration: none;
-    font-size: 16px;
-    padding: 12px 16px;
-    border-radius: 8px;
-    text-align: center;
-    margin: 4px;
 }
 
 .section_main_1_row {
@@ -203,9 +359,22 @@ body, html {
     padding: 0px 10px;
 }
 
-.list-title {
-    padding: 8px 0px;
+.section-main-2-col {
+    margin-bottom: 16px;
 }
+
+.list-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 8px 0px;
+    min-height: 57px;
+}
+
+.list-content {
+    list-style-type: none;
+}
+
 
 .list-content a {
     padding: 10px 0px;
@@ -219,6 +388,19 @@ body, html {
     color: var(--primeira_cor);
 }
 
+
+.list-content-right {
+    white-space: nowrap;
+    padding-left: 8px;
+}
+
+.list-content-left {
+    display: inline-block;
+    max-width: 320px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .list-class {
     background-color: var(--segunda_cor_extra_escuro);
@@ -249,4 +431,47 @@ body, html {
 .list-content li:nth-child(3) .list-class {
     color: var(--segunda_cor);
     background-color: var(--terceira_cor_classificacao);
+}
+
+/* Footer */
+
+#ifooter {
+    background-color: var(--segunda_cor);
+    padding: 16px 16px;
+}
+
+#ifooter a{
+    white-space: nowrap;
+    text-decoration: none;
+    margin: 8px;
+    color: var(--terceira_cor);
+    text-align: center;
+}
+
+#ifooter a:hover{
+    transition: 0.2s;
+    color: var(--primeira_cor);
+}
+
+#ifooter_row_1 a{
+    font-size: 15px;
+}
+
+#ifooter_row_1 {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+#ifooter_row_2 {
+    text-align: center;
+}
+
+#ifooter_row_2 {
+    font-size: 13px;
+    
+}
+
+#ifooter_row_2 span{
+    color: var(--terceira_cor_claro);
+    
 }

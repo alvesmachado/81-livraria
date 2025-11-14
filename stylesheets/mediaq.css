@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* 768px */
+
+@media screen and (min-width: 900px) {
+    #section_main_1_btn {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    #section_main_2 {
+        display: flex;
+        justify-content: center;
+    }
+    .section-main-2-col {
+        margin: 16px 16px;
+    }
+    .list-content-left {
+        max-width: 160px;
+    }
+}

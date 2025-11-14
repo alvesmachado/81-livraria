@@ -6,98 +6,85 @@
     <title>Livraria Rocket | Atualizações mais rápidas | Site de leitura</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="stylesheets/mobile_first.css" media="all">
+    <link rel="stylesheet" href="stylesheets/mediaq.css" media="all">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header id="iheader">
         <div id="header-content">
             <div class="cmenu-btn">
-                <i class="material-icons md-24 icon-menu">menu</i>
+                <i class="material-icons md-24 icon-menu" onclick="openMenu()">menu</i>
             </div>
             <div class="ilogo float-left">
-                <a href="index.html"><i  class="material-icons md-24">rocket_launch</i><span> Livraria</span></a>
+                <a href="#"><i  class="material-icons md-24">rocket_launch</i><span> Livraria</span></a>
             </div>
         </div>
-
     </header>
-    <main id="imain">
-        <section id="section_main_1" class="center">
-            <div id="logo_img">
-                <img src="imagens/logo_1200w.png" alt="Rocket Livraria">
-            </div>
-            <form action="pesquisar.php" class="search-form">
-                <input type="text" placeholder="Digite aqui para pesquisar" required>
-                <button type="submit" value="search" class="search-button">
-                    <i class="material-icons">search</i>
-                </button>
-            </form>
-            <div id="section_main_1_btn">
-                <div class="section_main_1_row">
-                    <a href="#" class="btn" id="iestante">Estante</a>
-                    <a href="#" class="btn" id="ihistorico">Histórico</a>
+    <nav id="inav">
+        <div id="nav_dark" onclick="openMenu()"></div>
+        <div id="nav_content">
+            <div id="header-content">
+                <div class="cmenu-btn">
+                    <i class="material-icons md-24 icon-menu" onclick="openMenu()">menu</i>
                 </div>
-                <div class="section_main_1_row">
-                    <a href="#" class="btn"  id="iliv_masc">Livros masculinos</a>
-                    <a href="#" class="btn"  id="iliv_femi">Livros femininos</a>
+                <div class="ilogo float-left">
+                    <a href="#"><i  class="material-icons md-24">rocket_launch</i><span> Livraria</span></a>
                 </div>
             </div>
-        </section>
-        <section id="section_main_2">
-            <div class="list-title border-bottom">
-                <h3>Novas recomendações</h3>
-            </div>
-            <ul class="list-content">
-
-                <li class="border-bottom">
-                    <a href="#">
-                        <div class="list-content-left">
-                            <span class="list-class">1</span>
-                            <span class="list-book">Lord of Mysteries</span>
-                        </div>
-                        <div class="list-content-right">
-                            <span class="list-status">Completo</span>
-                        </div>
-                    </a>
-                </li class="border-bottom">
-                
-                <li class="border-bottom">
-                    <a href="#">
-                        <div class="list-content-left">
-                            <span class="list-class">2</span>
-                            <span class="list-book">Harry Potter</span>
-                        </div>
-                        <div class="list-content-right">
-                            <span class="list-status">Completo</span>
-                        </div>
-                    </a>
+            <hr>
+            <ul id="nav-options">
+                <li class="menu-op"><a href="#"><i class="material-icons">home</i>Primeira página</a></li>
+                <li class="menu-op"><a href="#"><i class="material-icons">book</i>Livros serializados</a></li>
+                <li class="menu-op"><a href="#"><i class="material-icons">local_fire_department</i>Livros populares</a></li>
+                <li class="menu-op"><a href="#"><i class="material-icons">bookmark</i>Livros completos</a></li>
+                <li class="menu-op"><a href="#"><i class="material-icons">male</i>Livros masculinos</a></li>
+                <li class="menu-op"><a href="#"><i class="material-icons">female</i>Livros femininos</a></li>
+                <li class="menu-op"><a href="#"><i class="material-icons">shelves</i>Minha estante</a></li>
+                <li class="menu-op"><a href="#"><i class="material-icons">history</i>Meu histórico</a></li>
+                <hr>
+                <li id="login-info">
+                    <img src="imagens/user_img.png" alt="user-login-image" id="user_photo">
+                    <a id="user_nickname">user_nickname</a>
                 </li>
-
-                <li class="border-bottom">
-                    <a href="#">
-                        <div class="list-content-left">
-                            <span class="list-class">3</span>
-                            <span class="list-book">Perfect World</span>
-                        </div>
-                        <div class="list-content-right">
-                            <span class="list-status">Completo</span>
-                        </div>
-                    </a>
-                </li>
-
-                <li class="border-bottom">
-                    <a href="#">
-                        <div class="list-content-left">
-                            <span class="list-class">4</span>
-                            <span class="list-book">Sacred Ruins</span>
-                        </div>
-                        <div class="list-content-right">
-                            <span class="list-status">Completo</span>
-                        </div>
-                    </a>
+                <li class="login-option">
+                    <a href="#">Regristrar</a>
+                    <a href="#">Conectar</a>
+                    <a href="#">Esqueci minha senha</a>
                 </li>
             </ul>
-        </section>
+        </div>
+    </nav>
+    <main id="imain">
+        
     </main>
-    
+    <footer id="ifooter">
+        <div id="footer_content">
+            <div id="ifooter_row_1">
+                <a href="#">Classificações</a>
+                <a href="#">Última atualização</a>
+                <a href="#">Todos os livros</a>
+                <a href="#">Tags populares de livros</a>
+            </div>
+            <div id="ifooter_row_2">
+                <span>Copyright 2025</span>
+                <a href="https://github.com/alvesmachado">www.github.com</a>
+                <a href="https://github.com/alvesmachado">alvesmachado</a>
+                <a href="#">Política de privacidade</a>
+                <a href="#">Termo de uso</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function openMenu() {
+            if (nav_dark.style.display == 'block') {
+                nav_dark.style.display = 'none'
+                nav_content.style.left = '-280px'
+
+            } else {
+                nav_dark.style.display = 'block'
+                nav_content.style.left = '0px'
+            }
+        }
+    </script> 
 </body>
 </html>
