@@ -2,12 +2,17 @@
 
 /* 768px */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
+    /* Home */
     #section_main_1_btn {
         display: flex;
         justify-content: center;
         width: 100%;
     }
+}
+
+@media screen and (min-width: 924px) {
+    /* Home */
     #section_main_2 {
         display: flex;
         justify-content: center;
@@ -18,4 +23,35 @@
     .list-content-left {
         max-width: 160px;
     }
+    /* Login form */
+    #content_login {
+        display: flex;
+        width: 632px;
+    }
+    .login-label {
+        min-width: 230px;
+        padding-top: 16px;
+        padding-right: 8px;
+    }
+    .btn-entrar > .btn {
+        padding: 8px 16px;
+        margin: 0px;
+    }
+    .btn-entrar {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #login_span {
+        top: 326px;
+    }
+    #register_span {
+        top: 456px;
+    }
+    #btn_register {
+        padding: 8px 16px;
+    }
+    #btn_lost {
+        padding: 8px 16px;
+    }
+
 }

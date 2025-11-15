@@ -11,10 +11,14 @@
     margin: auto;
 }
 
+#section_lr_1 > span {
+    color: rgb(0 0 0 / 10%);
+}
+
 #login_span {
     position: absolute;
     padding: 4px;
-    top: 435px;
+    top: 433px;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--segunda_cor_var);

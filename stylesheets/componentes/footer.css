@@ -13,6 +13,7 @@
     margin: 8px;
     color: var(--terceira_cor);
     text-align: center;
+    line-height: 20px;
 }
 
 #ifooter a:hover{

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* Index */
+
+#section_read {
+    max-width: 990px;
+    padding: 16px;
+    margin: 0px auto;
+}
+
+#section_read h1{
+    font-size: 24px;
+    text-align: center;
+    
+}
+
+#section_read h2{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 16px;
+    
+}
+
+#section_read h3{
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+#section_read p{
+    font-size: 16px;
+    text-indent: 64px;
+    text-align: justify;
+    line-height: 32px;
+}
